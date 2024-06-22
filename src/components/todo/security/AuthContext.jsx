@@ -29,39 +29,7 @@ export default function AuthProvider({ children }) {
     //     }        
     // }
 
-    // async function login(username, password) {
-
-    //     const baToken = 'Basic ' + window.btoa( username + ":" + password )
-
-    //     try {
-
-    //         const response = await executeBasicAuthenticationService(baToken)
-
-    //         if(response.status==200){
-    //             setAuthenticated(true)
-    //             setUsername(username)
-    //             setToken(baToken)
-
-    //             apiClient.interceptors.request.use(
-    //                 (config) => {
-    //                     console.log('intercepting and adding a token')
-    //                     config.headers.Authorization = baToken
-    //                     return config
-    //                 }
-    //             )
-
-    //             return true            
-    //         } else {
-    //             logout()
-    //             return false
-    //         }    
-    //     } catch(error) {
-    //         logout()
-    //         return false
-    //     }
-    // }
-
-
+    
     async function login(username, password) {
 
         try {
